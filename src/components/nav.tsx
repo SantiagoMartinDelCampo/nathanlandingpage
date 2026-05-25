@@ -36,10 +36,10 @@ export default function Nav() {
   });
 
   const navLinks = [
-    { label: tx.about, href: "#about" },
-    { label: tx.education, href: "#education" },
-    { label: tx.projects, href: "#projects" },
-    { label: tx.goals, href: "#goals" },
+    { label: tx.about, id: "about" },
+    { label: tx.education, id: "education" },
+    { label: tx.projects, id: "projects" },
+    { label: tx.goals, id: "goals" },
   ];
 
   return (
@@ -63,14 +63,14 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <nav className="hidden md:flex items-center gap-5 mr-2">
-            {navLinks.map(({ label, href }) => (
-              <a
-                key={href}
-                href={href}
+            {navLinks.map(({ label, id }) => (
+              <button
+                key={id}
+                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })}
                 className="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150"
               >
                 {label}
-              </a>
+              </button>
             ))}
           </nav>
 

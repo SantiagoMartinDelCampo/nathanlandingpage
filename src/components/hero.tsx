@@ -1,12 +1,28 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLang } from "@/contexts/language-context";
 import { t } from "@/lib/i18n";
 
+function scrollTo(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
+
 export default function Hero() {
   const { lang } = useLang();
   const tx = t[lang].hero;
+
+  // Clear any hash from URL on mount so the page always opens at the top
+  useEffect(() => {
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
+    }
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-14">
@@ -56,13 +72,12 @@ export default function Hero() {
           transition={{ delay: 0.52, duration: 0.6 }}
           className="flex items-center gap-3"
         >
-          <a
-            href="#projects"
+          <button
+            onClick={() => scrollTo("projects")}
             className="px-4 py-2 bg-zinc-900 dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-colors duration-150"
           >
             {tx.cta_projects}
-          </a>
-          {/* Place your CV PDF in public/cv.pdf */}
+          </button>
           <a
             href="/cv.pdf"
             download="Nathan_Chung_CV.pdf"
