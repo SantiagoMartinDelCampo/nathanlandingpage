@@ -57,7 +57,7 @@ export const t = {
         "Personal projects and explorations, works in progress and experiments.",
       items: [
         {
-          name: "App para hospitales",
+          name: "Hospital App",
           description:
             "SwiftUI mobile app for private hospitals in Mexico: patient portal with medical directory and appointment management. Researched HL7 FHIR & SMART on FHIR integration and defined a B2B SaaS go-to-market strategy with a progressive MVP roadmap.",
           tech: ["SwiftUI", "HL7 FHIR", "OAuth 2.0"],
@@ -96,7 +96,7 @@ export const t = {
         },
         {
           title: "Build AI-native products that matter",
-          body: "The most impactful software right now lives at the intersection of AI and real human workflows. I want to keep building there, starting with the App para hospitales.",
+          body: "The most impactful software right now lives at the intersection of AI and real human workflows. I want to keep building there, starting with Hospital App.",
         },
         {
           title: "Found a technology company",

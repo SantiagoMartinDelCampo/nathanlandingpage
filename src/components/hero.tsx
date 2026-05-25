@@ -64,8 +64,8 @@ export default function Hero() {
           </a>
           {/* Place your CV PDF in public/cv.pdf */}
           <a
-            href="/cv.docx"
-            download="Nathan_Chung_CV.docx"
+            href="/cv.pdf"
+            download="Nathan_Chung_CV.pdf"
             className="flex items-center gap-1.5 px-4 py-2 border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 text-sm font-medium rounded-lg hover:border-zinc-500 dark:hover:border-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors duration-150"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
