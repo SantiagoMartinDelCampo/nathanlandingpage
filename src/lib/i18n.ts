@@ -57,7 +57,7 @@ export const t = {
         "Personal projects and explorations, works in progress and experiments.",
       items: [
         {
-          name: "Hospital-App",
+          name: "App para hospitales",
           description:
             "SwiftUI mobile app for private hospitals in Mexico: patient portal with medical directory and appointment management. Researched HL7 FHIR & SMART on FHIR integration and defined a B2B SaaS go-to-market strategy with a progressive MVP roadmap.",
           tech: ["SwiftUI", "HL7 FHIR", "OAuth 2.0"],
@@ -96,7 +96,7 @@ export const t = {
         },
         {
           title: "Build AI-native products that matter",
-          body: "The most impactful software right now lives at the intersection of AI and real human workflows. I want to keep building there, starting with the Hospital-App.",
+          body: "The most impactful software right now lives at the intersection of AI and real human workflows. I want to keep building there, starting with the App para hospitales.",
         },
         {
           title: "Found a technology company",
@@ -164,7 +164,7 @@ export const t = {
         "Proyectos personales y exploraciones, trabajos en proceso y experimentos.",
       items: [
         {
-          name: "Hospital-App",
+          name: "App para hospitales",
           description:
             "App móvil en SwiftUI para hospitales privados en México: portal del paciente con directorio médico y gestión de citas. Investigación de integración HL7 FHIR & SMART on FHIR y estrategia go-to-market B2B SaaS con roadmap progresivo desde MVP.",
           tech: ["SwiftUI", "HL7 FHIR", "OAuth 2.0"],
@@ -203,7 +203,7 @@ export const t = {
         },
         {
           title: "Construir productos nativos de IA que importen",
-          body: "El software más impactante ahora vive en la intersección de la IA y los flujos de trabajo humanos reales. Quiero seguir construyendo ahí, empezando con Hospital-App.",
+          body: "El software más impactante ahora vive en la intersección de la IA y los flujos de trabajo humanos reales. Quiero seguir construyendo ahí, empezando con la App para hospitales.",
         },
         {
           title: "Fundar una empresa de tecnología",
